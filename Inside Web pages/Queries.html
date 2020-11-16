@@ -1,0 +1,235 @@
+<html>
+<head>
+    <style>
+    body{
+        font-family: Arial;
+        color:white;
+        background-size:cover;
+    }
+    .rapper{
+        position: relative;
+        display: inline-flexbox;
+        width: auto;
+    }
+    .box{
+        text-align: center;
+        color: white;
+        position: inherit;
+        display: inline-block;
+        margin: 0 auto;
+        height: auto;
+        width: 100%;
+        background: black;
+        margin-top: -20px;
+    }
+    .box img{
+        height: 80px;
+        width: 80px;
+        padding: 10px;
+        float: left;
+        margin-left: 5px;
+    }
+    .box ul{
+        color: white;
+    }
+    .box ul li{
+        font-size: 3.25vh;
+        height: 45px auto;
+        width: 210px auto;
+        margin: 10px;
+        padding: 14px 16px;
+        text-align: center;
+        float: left;
+        line-height: 40px;
+        margin-left: 30px;
+        display: block;
+    }
+    .box ul li a{
+        text-decoration: none;
+        color: white;
+        display: block;
+    }
+    .box ul li:hover{
+        border-radius: 3px;
+        background: orangered;
+    }
+    .box ul li a:hover{
+        color: black;
+    }
+    .sub li{
+        list-style: disc;
+
+    }
+    .box ul li ul li{
+        display: none;
+    }
+    .box ul li:hover ul li{
+        display: block;
+    }
+    .fifth{
+        background:orangered;
+        border-radius: 3px;
+        padding: 2px;
+    }
+    .handles{
+        display: inline;
+        position: relative; 
+    }
+    .handles img{
+        width: 50px;
+        height: 50px;
+        float: right;
+        margin-right: 5px;
+    }
+    .handles img:hover{
+        transform: scale(1.1);
+    }
+    .measures{
+        background-color: orangered;
+        opacity: 0.9;
+        padding: 60px;
+        text-align: left;
+        height: auto;
+        width: auto;
+        margin-top: 5px;
+    }
+    .container{
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        color: black;
+        font-size: large;
+    }
+    input[type=text], textarea {
+        width: 70%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    input[type=date]{
+        width: 70%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    input[type=email]{
+        width: 70%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    input[type=submit]{
+        background-color:darkcyan;
+        width: 200px;
+        height: 50px;
+        color: white;
+        font-size:large;
+        border-radius: 2px;
+    }
+    input[type=submit]:hover{
+        background-color: #1d1418;
+    }
+    input[type=radio]{
+        margin-top: 6px;
+        margin-bottom: 16px;
+    }
+    .footer{
+        background: black;
+        text-align: center;
+        color: white;
+        margin-top: -15px;
+    }
+    .footer h3 a{
+        color: white;
+    }
+    .handles2{
+        display: inline;
+        position: relative;
+    }
+    .handles2 img{
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+        margin-top: auto;
+    }
+    .handles2 img:hover{
+        transform: scale(1.1);
+    }
+    </style>
+    <title>Queries</title>
+</head>
+<body>
+    <div class="rapper">
+    <div class="box">
+        <img src="../Images/Logo3.png" >
+        <ul type = "none" >
+        <li><a href = "Home.html">Home</a></li>
+        <li><a href = "VR vs AR.html">VR vs AR</a></li>
+        <li><a href = "Applications.html">Application </a></li>
+        <li><a href = "Upcoming Innovations.html">Upcoming Innovations</a></li>
+        <li><a href = "Gallery.html"><div class="content">Gallery</div></a></li>        
+        <li class="fifth"><a href = "Queries.html"><div class="content1">Queries</div></a></li>
+
+    </ul>
+    <div class="handles">
+        <a href="https://www.facebook.com"><img src="../Images/Fb.png"></a>
+        <a href="https://www.twitter.com"><img src="../Images/twitter.PNG"></a>
+    </div>
+    </div>
+    </div>
+    <div class="measures">
+      <div class="container">
+        <form onsubmit="alert('Submit!');return false">
+        Name:<br><input type="text" id="Name">
+        <br>
+        <br>
+        Gender:<input type="radio" id="Male" name="Gender" value="Male">Male
+        <input type="radio" id="Female" name="Gender" value="Female">Female
+        <br> 
+        <br>
+        Date:<br><input type="date" id="Date">
+        <br>
+        <br> 
+        Address:<br><input type="text" id="Address">
+        <br>
+        <br>
+        Email:<br><input type="email" id="Email">
+        <br>
+        <br>
+        Enter your query:
+        <br>
+        <textarea  id="Queries" cols="70" rows="10">
+        </textarea>
+        <br>
+        <br>
+        <center>
+        <input type="submit"value="Submit">
+        </center>
+      </form>  
+    </div>
+    </div>
+    <div class="footer">
+        <h3><a href="Queries.html">CONTACT US</a></h3>
+        <p>
+© 2020 AR and technology trends. All RIGHTS RESERVED.
+        </p>
+        <div class="handles2">
+            <a href="https://www.facebook.com"><img src="../Images/Fb.png"></a>
+            <a href="https://www.twitter.com"><img src="../Images/twitter.PNG"></a>
+        </div>
+    </div>
+</body>
+</html>
+
